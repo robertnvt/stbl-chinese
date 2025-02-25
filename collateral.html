@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>STBL 抵押品信息</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- 头部导航 -->
+        <header id="main-header">
+            <div class="header-top">
+                <img src="stbl_logo.png" alt="STBL Logo" class="header-logo" />
+                <nav>
+                    <a href="index.html">STBL</a> | <a href="collateral.html">抵押品信息</a> |
+                    <a href="#" class="login-button">登录</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 抵押品收益率部分 -->
+        <section id="collateral-yield">
+            <header>
+                <h1>STBL 抵押品收益率</h1>
+            </header>
+            <div class="month-select">
+                <label for="month">月份</label>
+                <select id="month" name="month">
+                    <option value="2025-02">2025-02</option>
+                    <!-- 可以根据需要添加更多月份选项 -->
+                </select>
+            </div>
+            <div class="details-table">
+                <table>
+                    <tr>
+                        <th>日期</th>
+                        <th>1日年化收益率 (仅供参考)</th>
+                    </tr>
+                    <tr>
+                        <td>2025-02-14</td>
+                        <td>4.38%</td>
+                    </tr>
+                    <tr>
+                        <td>2025-02-13</td>
+                        <td>4.38%</td>
+                    </tr>
+                    <tr>
+                        <td>2025-02-12</td>
+                        <td>4.38%</td>
+                    </tr>
+                    <tr>
+                        <td>2025-02-11</td>
+                        <td>4.39%</td>
+                    </tr>
+                    <tr>
+                        <td>2025-02-10</td>
+                        <td>4.39%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pagination">
+                <p>10 条记录</p>
+                <span class="pagination-controls">
+                    <button>&lt;</button>
+                    <!-- 将 < 替换为 &lt; -->
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>&gt;</button>
+                    <!-- 将 > 替换为 &gt; -->
+                </span>
+            </div>
+        </section>
+
+        <!-- 抵押品详情部分 -->
+        <section id="collateral-details">
+            <header>
+                <h1>STBL 抵押品详情</h1>
+            </header>
+            <div class="date-select">
+                <label for="date">日期</label>
+                <input type="date" id="date" name="date" value="2025-02-14" />
+                <p class="total-collateral">总抵押品规模：US$5,325,854.42 USD</p>
+            </div>
+            <div class="details-table">
+                <table>
+                    <tr>
+                        <th>基金名称</th>
+                        <th>1日年化收益率</th>
+                        <th>基金资产规模(M)</th>
+                        <th>作为 STBL 抵押品金额</th>
+                        <th>CUSIP, ISIN, or APIR</th>
+                    </tr>
+                    <tr>
+                        <td>WESTERN ASSET INSTL CASH RES 12</td>
+                        <td>4.37351%</td>
+                        <td>$5,594.87</td>
+                        <td>$1,0651709</td>
+                        <td>KYG</td>
+                    </tr>
+                    <tr>
+                        <td>DWS MGD DOLLAR</td>
+                        <td>4.40482%</td>
+                        <td>$15,159.95</td>
+                        <td>$1,06517088</td>
+                        <td>IE0</td>
+                    </tr>
+                    <tr>
+                        <td>MORGAN STANLEY USD LIQ INSTL ZD1</td>
+                        <td>4.39%</td>
+                        <td>$55,028</td>
+                        <td>$1,06517088</td>
+                        <td>LUX</td>
+                    </tr>
+                    <tr>
+                        <td>BLACKROCK INTL CASH SR INST</td>
+                        <td>4.38%</td>
+                        <td>$88,912.47</td>
+                        <td>$1,06517088</td>
+                        <td>IEC</td>
+                    </tr>
+                    <tr>
+                        <td>STATE STREET USD LIQ LVNAV DIST</td>
+                        <td>4.3619%</td>
+                        <td>$27,229.55</td>
+                        <td>$1,06517088</td>
+                        <td>IEC</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer id="footer">
+            <div class="footer-content">
+                <img src="stbl_logo.png" alt="STBL Logo" class="footer-logo" />
+                <h2>免责声明</h2>
+                <p>
+                    请注意，发行人、安排人、管理人、担保受托人、区块链代理人或协调经销商均不以任何方式作为法律、税务、会计或监管事务的顾问，也未以任何方式自称是阁下之的代理人或代表。阁下应对与
+                    STBL
+                    相关的任何交易进行独立调查，并评估其风险、收益和适合性。您应对此负责，发行人对此不承担任何责任或义务。此处列出的条款仅为指示性，且可能发生变化。任何书面要约仅通过私募备忘录/发行通函及其任何相关补充文件作出。此处提及的证券可能涉及高风险，其中可能包括本金、利率、指数、货币、信用、政治、流动性、时间价值、商品和市场风险，且不适合所有投资者。
+                </p>
+                <p>© 2024 STBL. 保留所有权利。</p>
+                <p>联系我们：registrar@stblpartners.com</p>
+            </div>
+        </footer>
+    </body>
+</html>
